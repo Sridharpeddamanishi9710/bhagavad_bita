@@ -1,0 +1,3322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bhagavad Gita</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+  <script src="https://fontawesome.com/icons/youtube?f=brands&s=solid" crossorigin="anonymous"></script>
+  
+<style>
+    .image_animation {
+    min-height: 150vh;
+    display: grid;
+    place-items: center;
+    width: 1200px;
+    margin-left: 5rem;
+}
+
+.slides {
+  height: 70vh;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  inset: 0;
+  animation: slide-show 12s infinite;
+}
+
+.slide-2 {
+  animation-delay: 5s;
+}
+
+.slide-3 {
+  animation-delay: 8s;
+}
+.slide-4 {
+  animation-delay: 10s;
+}
+.slide-5 {
+  animation-delay: 10s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes slide-show {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20%,
+  30% {
+    opacity: 1;
+    scale: 1.03;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.inner_container {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+.inner_container p{
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+  width: 1024px; 
+  margin: 0 auto; 
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100%; 
+  }
+}
+
+#container1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+  
+#container1 img {
+    height: 100vh;
+    width: 100vw;
+}
+  
+#container1 .btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px orange;
+}
+  
+#container1 .btn:hover {
+    background-color: orange;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px orange,
+    0 0 25px orange,0 0 50px orange,
+    0 0 100px orange,0 0 200px orange;
+}
+
+.inner_container{
+    box-sizing: border-box;
+    margin: 3.5rem;
+    font-size: 1.5rem; 
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+ #middle_container{
+    font-size: 2.2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 10px;
+    background-color: #dda15e;
+    background-size: 49rem 14rem;
+    margin-top: 5.2rem;
+    box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.2); 
+    font-family: cursive;
+    border-radius: 2rem;
+}  
+
+#sloka1-border h1{
+    padding-left: 110px;
+}
+
+#s2-heading{
+    padding: 20px;
+    color: black;
+}
+
+#s2-heading h1{
+    margin-left: 23rem;
+}
+
+#s2-heading h2{
+    margin-left: 19rem;
+}
+
+#s2-heading h3{
+    margin-left: 17rem;
+}
+
+.container {
+    display: flex; 
+    align-items: flex-start;  
+}
+
+#summary-container{
+    border-radius: 2px;
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin-top: -7rem;
+}
+
+#summary-container p{
+    padding: 18px;
+    margin-top: -2rem;
+    text-align: justify;
+}
+
+.slides{
+    height: 600px;
+    width: 1200px; 
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2); 
+    background-color: #000;
+    margin-top: -5rem;
+}
+
+#para{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); 
+    margin-left: 8rem;
+    margin-right: 5rem;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#p1::first-letter {
+    font-weight: bold; 
+    size: auto;
+    font-size: 6rem;
+}
+
+#summary-container h1{
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 20px 20px 20px 400px;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-right: 5rem;
+    background-color: #a1c181;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .inner_container h1 {
+    margin-bottom: 6rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 20px 20px 20px 260px;
+    background-color: #fff; 
+    transform: scale(1.02); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    background-color: #a1c181;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#image img {
+    width: 1000px; 
+    height: 450px; 
+    border-radius: 5px; 
+    margin-top: 5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    padding: 5px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.Shloka-1:hover {
+    background-color: #a1c181; 
+    transform: scale(1.03); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-2:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-3:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-4:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-5:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+
+.Shloka-6:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-7:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-8:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-9:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+
+.Shloka-10:hover {
+    background-color: #a1c181; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-color: #fff;
+}
+
+#border1{
+    border: 1px solid black;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 10px 10px rgba(56, 31, 31, 0.2); 
+    background-image: url('https://www.dropbox.com/scl/fi/yxgtbewc65apv2l7zrtm0/shloka-17.jpg?rlkey=l151xuc2n5pnea3v98q57wkh3&st=0sqsrgri&raw=1'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px; 
+    min-width: 800px; 
+    min-height: 600px; 
+}
+
+#navClick1 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #e4d6a7;
+    margin-top: 6rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 60px 60px 60px 150px;
+    border-radius: 4rem;
+    border-color: #e4d6a7;
+}
+
+#navClick1 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.4rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#navClick1 h3{
+    background-color: #242d59; 
+    margin-left: 6.5rem;
+    margin-bottom: 1.8rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 20px 0px 20px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.buttons{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 3.8rem;
+}
+
+.buttons button{
+    background-color: #e4d6a7; 
+    color: #592c1c;
+    border: 2px solid #e4d6a7; 
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 70px;
+    width: 150px;
+}
+
+.buttons button:hover {
+    background-color: #4b4b4b; 
+    color: #b69e49; 
+    transform: scale(1.05); 
+    border-color: #4b4b4b;
+  }
+
+  .buttons button:active {
+    background-color: #6b5235; 
+    color: #ffffff;
+    transform: scale(0.95); 
+  }
+
+#btn {
+    display: inline-block;
+    padding: 12px 50px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 2rem 0rem 1rem 30rem;
+  }
+
+  #btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+
+  #btn:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+  }
+
+#commentary p{
+    font-size: 1.4rem;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    text-align: justify;
+
+}
+
+#commentary h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+#commentary{
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+#commentaryimage img{ 
+      width: 900px;
+      height: 600px;
+      margin: 3rem;
+}
+
+#summary{
+    font-size: 1.4rem;
+}
+
+#summary h2{
+    padding : 14px 380px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    margin-right: 2rem;
+}
+
+#summary p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 4rem;
+    padding: 10px;
+    margin-left: 2rem;
+    text-align: justify;
+}
+
+
+#sloka1-border{
+    border: 2px solid black;
+    margin-top: 2rem;
+    padding: 20px 0px 20px 300px;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+}
+
+/*Shloka-2................*/
+
+#navClick2 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick2 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick2 h3{
+    background-color: #242d59; 
+    margin-left: 6.5rem;
+    margin-bottom: 1.8rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 20px 0px 20px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary2 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 5rem;
+    text-align: justify;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#commentary2 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#commentary2{
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 7rem;
+}
+
+#commentaryimage2 img{ 
+      width: 600px;
+      height: 600px;
+      margin: 3rem 0rem 3rem 20rem;
+}
+
+#summary2{
+    font-size: 1.4rem;
+    padding: 10px;
+    margin: 2rem 5rem 2rem 7rem;
+}
+
+#summary2 h2{
+    padding : 20px 380px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+}
+
+#summary2 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+
+/* Shloka-3 ......................*/
+
+#navClick3 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick3 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#navClick3 h3{
+    background-color: #242d59; 
+    margin-left: 6.5rem;
+    margin-bottom: 1.8rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 20px 0px 20px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary3 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+#commentary3 h2{
+    border: 2px solid black;
+    padding: 14px 0px 2px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#commentary3{
+    padding: 13px;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 7rem;
+}
+
+#commentaryimage3 img{ 
+    width: 600px;
+    height: 500px;
+    margin: 3rem 0rem 3rem 20rem;
+}
+
+#summary3{
+    margin: 1rem 5rem 2rem 7rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary3 h2{
+    padding : 20px 380px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+}
+
+#summary3 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+/*Shloka-4 ..............*/
+
+#navClick4 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick4 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 9rem;
+    margin-right: 10rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick4 h3{
+    background-color: #242d59; 
+    margin-left: 6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 18px 0px 18px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary4 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+#commentary4 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#commentary4{
+    padding: 10px;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 7rem;
+}
+
+#commentaryimage4 img{ 
+    width: 800px;
+    height: 500px;
+    margin: 3rem 0rem 3rem 15rem;
+}
+
+#summary4{
+    margin: 1rem 5rem 2rem 7rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary4 h2{
+    padding : 20px 380px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#summary4 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+/*Shloka-5 ...........*/
+
+#navClick5 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick5 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 10rem;
+    margin-right: 5rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick5 h3{
+    background-color: #242d59; 
+    margin-left: 7rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 20px 0px 20px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary5 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 2.5rem;
+    margin-right: 2.9rem;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#commentary5 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left:1rem;
+    margin-right: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#commentary5{
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+#commentaryimage5 img{ 
+    width: 800px;
+    height: 500px;
+    margin: 3rem 0rem 3rem 15rem;
+}
+
+#summary5{
+    margin: 1rem 5rem 2rem 7rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary5 h2{
+    padding : 20px 380px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#summary5 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+
+/*Shloka-6 ...........*/
+
+#navClick6 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick6 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick6 h3{
+    background-color: #242d59; 
+    margin-left: 7rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 18px 0px 18px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary6 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 2.5rem;
+    margin-right: 2.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#commentary6 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left:1rem;
+    margin-right: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#commentary6{
+    padding: 18px;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
+}
+
+#commentaryimage6 img{ 
+    width: 800px;
+    height: 500px;
+    margin: 3rem 0rem 3rem 15rem;
+}
+
+#summary6{
+    margin: 1rem 4rem 2rem 7rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary6 h2{
+    padding : 20px 380px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    margin-right: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#summary6 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+/*Shloka-7 ...........*/
+
+#navClick7 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick7 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    padding: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick7 h3{
+    background-color: #242d59; 
+    margin-left: 7rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 18px 0px 18px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary7 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 2.5rem;
+    margin-right: 2.9rem;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#commentary7 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left:1rem;
+    margin-right: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#commentary7{
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+#commentaryimage7 img{ 
+    width: 500px;
+    height: 600px;
+    margin: 3rem 0rem 3rem 22rem;
+}
+
+#summary7{
+    margin: 1rem 5rem 2rem 5rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary7 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+#summary7 h2{
+    padding : 20px 380px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Shloka-8 ..........*/
+
+#navClick8 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick8 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick8 h3{
+    background-color: #242d59; 
+    margin-left: 7rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 18px 0px 18px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary8 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 2.5rem;
+    margin-right: 2.9rem;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#commentary8 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left:1rem;
+    margin-right: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary8{
+    padding: 17px;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+#commentaryimage8 img{ 
+    width: 800px;
+    height: 500px;
+    margin: 3rem 0rem 3rem 15rem;
+}
+
+#summary8{
+    margin: 1rem 5rem 2rem 5rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary8 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+#summary8 h2{
+    padding : 20px 430px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Shloka-9 ...........*/
+
+#navClick9 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick9 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick9 h3{
+    background-color: #242d59; 
+    margin-left: 7.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 20px 0px 20px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary9 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 2.5rem;
+    margin-right: 2.9rem;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#commentary9 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left:1rem;
+    margin-right: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary9{
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+#commentaryimage9 img{ 
+    width: 800px;
+    height: 500px;
+    margin: 3rem 0rem 3rem 15rem;
+}
+
+#summary9{
+    margin: 1rem 5rem 2rem 5rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary9 h2{
+    padding : 20px 430px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#summary9 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+/*Shloka-10 ......*/
+
+#navClick10 h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #592c1c;
+    background-color: #ebd8c3;
+    margin-top: 3rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding: 40px 40px 40px 140px;
+    border-radius: 4rem;
+}
+
+#navClick10 p{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    padding: 40px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navClick10 h3{
+    background-color: #242d59; 
+    margin-left: 7.1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;
+    font-size: 2.2rem;
+    padding: 20px 0px 20px 320px;
+    margin-right: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    border-color: #242d59;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary10 p{
+    font-size: 1.4rem;
+    padding: 20px;
+    margin-left: 2.5rem;
+    margin-right: 3rem;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#commentary10 h2{
+    border: 2px solid black;
+    padding: 14px 0px 14px 340px;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    background-color: #242d59;
+    border-color: #242d59;
+    color: #ffc071;
+    margin-left:1rem;
+    margin-right: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#commentary10{
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+#commentaryimage10 img{ 
+    width: 700px;
+    height: 500px;
+    margin: 3rem 0rem 3rem 17.5rem;
+}
+
+#summary10{
+    margin: 1rem 5rem 2rem 5rem;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#summary10 h2{
+    padding : 20px 430px;
+    background-color: #242d59;
+    border-color: #242d59;
+    margin-bottom: 3rem;
+    color: #ffc071;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#summary10 p{
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+
+.container ul {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    list-style-type: none; 
+    padding: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
+  .container ul li {
+    border: 1px solid #000; 
+    background-color: #bb9457; 
+    text-align: center; 
+    border-radius: 3rem;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .container ul li p {
+    margin: 5px 0 0; 
+    font-size: 1.3rem;
+  }
+  
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 290px;
+}
+
+#related-links {
+    display: flex;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-left: 10rem;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+i {
+    margin-right: 8px;
+}
+
+#youtube i {
+    color: #FF0000;
+}
+
+#youtube a{
+    padding: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#facebook i {
+    color: #4267B2;
+}
+
+#facebook a{
+    padding: 5px;
+    margin-left: 4rem;
+    margin-right: 2rem;
+}
+
+#others a{
+    padding: 2px;
+    margin-right: 2rem;
+}
+
+a i {
+    margin-right: 8px;
+
+  }
+
+  a:hover {
+    color: #007BFF;
+  }
+
+  #links h1{
+    margin-left: 34rem;
+  }
+  #links{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 0rem 2rem 2rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: #242d59;
+    color: #ffc071;
+  }
+
+/* .............*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* ...............*/
+
+#main-container {
+    width: 100%; 
+    height: 100%; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+    height: 100vh;
+}
+
+#Bhagavadgita{
+    border: 2px solid black;
+    margin: 2rem 5rem 5rem 4rem;
+    font-size: 3.2rem;
+    font-family: Roboto;
+}
+
+  #topimage {
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      background-color: #f5f5f5;
+      padding: 0px; 
+      border-bottom: 2px solid #ccc; 
+  }
+
+  #topimage img {
+      height: 180px; 
+      width: auto; 
+      margin: 0 59px; 
+  }
+
+  #gita h5 {
+      font-size: 5.5rem; 
+      margin: 0;
+      text-align: center; 
+      color: #333; 
+  }
+
+#youtube_video{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video1{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video2{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video3{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video4{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video5{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video6{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video7{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video8{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video9{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+#youtube_video10{
+    margin : 3.5rem 0rem 4rem 9rem;
+}
+
+/* .................................. */
+
+#audPlayer {
+    width: 340px; 
+    height: 70px; 
+    margin-left: 6rem;
+    margin-top: 6rem;
+}
+
+.audio-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; 
+    justify-content: center;
+    margin: 3rem 5rem 1rem 5rem;
+    
+}
+
+audio {
+    flex-shrink: 0; 
+    border-radius: 10px;
+}
+
+.scroll-container {
+    width: 190px;
+    height: 115px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    margin-top: 5rem;
+}
+
+.audio-track {
+    margin: 8px 0;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid #6200ea;
+    border-radius: 25px;
+    background-color: #f3e5f5; 
+    color: #6200ea; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-container button{
+    width: 180px;
+    height: 40px;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+.audio-track:hover {
+    background-color: #6200ea; 
+    color:   #e4d6a7; 
+    transform: translateY(-3px);
+}
+
+.audio-track.active {
+    background-color: #3700b3; 
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/*.......................................*/
+
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    display: inline-block;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    border-radius: 4px;
+  }
+  
+  .index_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .index_button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 40px;
+    width: 120px;
+  }
+  
+  .index_button:hover {
+    background-color: #45a049;
+  }
+  
+  .menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  .menu-dropdown a {
+    height: 3rem;
+    width: 12rem;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  .index_container:hover .menu-dropdown {
+    display: block;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .topnav a, 
+  .index_container, 
+  .search-container {
+    margin: 0 10px;
+  }
+  
+/*...............contact..............*/
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  #contact > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    background-color: #F8F8F8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #contact > div:hover {
+    transform: translateY(-15px);
+  }
+  
+  #contact img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 60px;
+  }
+  
+  #contact > div {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  #contact > div span {
+    font-weight: bold;
+  }
+  
+  .menu-dropdown i{
+    padding-left: 30px;
+  }
+
+  #gita1 {
+  width: 80px; 
+  height: auto;
+  animation: float 3s ease-in-out infinite; 
+}
+
+  @keyframes float {
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+}
+
+#next1 {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+#next1-btn {
+  background-color: #007bff; 
+  color: white; 
+  font-size: 18px; 
+  font-weight: bold; 
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: all 0.2s ease; 
+}
+
+#next1-btn:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+#next1-btn:active {
+  background-color: #004085; 
+  transform: translateY(0); 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+    margin-top: 20px; 
+  }
+
+  #next {
+    margin-left: 2rem;
+    
+  }
+
+  #prev{
+    margin-left: 31.5rem;
+  }
+
+  #prev, #next {
+    background-color: #007BFF; 
+    color: white; 
+    font-size: 16px;
+    font-weight: bold; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  #prev:hover, #next:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+  }
+  
+  #prev:active, #next:active {
+    background-color: #004085; 
+    transform: scale(1); 
+  }
+
+  #prev1 {
+    margin-left: 35rem;
+    background-color: #007bff; 
+    color: white; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+
+  #prev1:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+  }
+
+  #prev1:active {
+    background-color: #003f7f; 
+    transform: scale(0.95); 
+  }
+
+
+  #next1 {
+  background-color: #007bff; 
+  color: white;
+  margin-left: 35.2rem;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+  font-weight: bold; 
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+#next1:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+#next1:active {
+  background-color: #003f7f;
+  transform: scale(0.95); 
+}
+
+@media screen and (max-width:600px){
+  body ,#main-container{
+    width: 100%; 
+  }
+}
+
+#contactbody{
+  background-color: antiquewhite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.aboutcontainer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.intro-section h1{
+    background: #4e89ae;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0 0 -1rem 0;
+    font-size: 2rem;
+}
+
+.content-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 4rem auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2d5a27;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+}
+
+#aboutimage {
+    height: 350px;
+    width: 550px;
+    margin: 1rem 0 0 4rem;
+    border-radius: 8px;
+}
+
+.footer-section {
+    text-align: center;
+    padding: 1rem 0;
+    background: #4e89ae;
+    color: #fff;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.about{
+      background-color: #4CAF50;
+      border-radius: 6px;
+}
+
+.shlokacontact{
+      background-color: #4CAF50;
+      border-radius: 6px;
+}
+
+</style>
+
+</head>
+<body>
+  <div id="container1">
+    <div id="container">
+      <div id="clickHere">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; padding-bottom: 0; 
+                    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; 
+                    overflow: hidden; border-radius: 8px; will-change: transform;">
+          <iframe 
+            loading="lazy" 
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" 
+            src="https://www.canva.com/design/DAGWz0GoziE/8Hz6xP31sKg1SKQLy2P8ew/view?embed" 
+            allowfullscreen="allowfullscreen" 
+            allow="fullscreen">
+          </iframe>
+          <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 1;">
+            <button  
+              onclick="clickHere()" 
+              style="padding: 10px 20px; font-size: 16px; color: white; background-color: #000000; 
+                     border: none; border-radius: 5px; cursor: pointer; margin-bottom: 200px;">
+              Explore!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+window.clickHere = async function (click1) {
+    window.clickhere=click1;
+    const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="main-container">
+        <div id="topimage">
+        <img id="gita1" src="https://www.dropbox.com/scl/fi/72vj7nrb6bhnmjsluphc4/om2.jpg?rlkey=s4g0uh6fax65tbhp8ykw6ygo5&st=j1y2qvdu&raw=1">
+        <div id="gita">
+            <h5>BHAGAVAD GITA</h5>
+        </div>
+        <img id="gita1" src="https://www.dropbox.com/scl/fi/shsdodlcum4ungyidd1zm/om3.jpg?rlkey=b82rcslqlndrei3lsdl4n9lwx&st=6s53bwhj&raw=1">
+       </div>
+       <div class="topnav">
+  <div class="index_container">
+    <button class="index_button"><a><i class="fa-solid fa-bars"></i>Index</a></button>
+    <div class="menu-dropdown">
+      <a href="#summary-container">Introduction</a>
+      <a href="#inner_container">Introduction to Slokas</a>
+      <a href="#Shloka-1"><i class="fa-regular fa-hand-point-right"></i> Shloka-23</a>
+      <a href="#Shloka-2"><i class="fa-regular fa-hand-point-right"></i> Shloka-24</a>
+      <a href="#Shloka-3"><i class="fa-regular fa-hand-point-right"></i> Shloka-25</a>
+      <a href="#Shloka-4"><i class="fa-regular fa-hand-point-right"></i> Shloka-26</a>
+      <a href="#Shloka-5"><i class="fa-regular fa-hand-point-right"></i> Shloka-27</a>
+      <a href="#Shloka-6"><i class="fa-regular fa-hand-point-right"></i> Shloka-28</a>
+      <a href="#Shloka-7"><i class="fa-regular fa-hand-point-right"></i> Shloka-29</a>
+      <a href="#Shloka-8"><i class="fa-regular fa-hand-point-right"></i> Shloka-30</a>
+      <a href="#Shloka-9"><i class="fa-regular fa-hand-point-right"></i> Shloka-31</a>
+      <a href="#Shloka-10"><i class="fa-regular fa-hand-point-right"></i> Shloka-32</a>
+      <a href="#youtube_video">Chapter-9 Video</a>
+      <a href="#related-links">Related Links</a>
+    </div>
+  </div>
+  <a class="active" onclick="home()" href="#home"><i class="fa-solid fa-house"></i>Home</a>
+  <a class="about" onclick="about()" href="#about">About</a>
+  <a class="shlokacontact" onclick="contact()"  href="#contact()">Contact</a>
+  <div class="search-container">
+    <form action="https://www.google.com/search" method="get">
+      <input type="text" name="q" placeholder="Search Google...">
+      <button id="search" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+     <div id="slide-2">
+      <div id="middle_container">
+          <div id="container">
+            <div id="s2-heading">
+            <h1>Chapter 9 </h1>
+            <h2>(Shlokas 361-370)</h2>
+            <h3>(Raja Vidya Raja Guhya Yoga)</h3>
+            </div>
+          </div>
+      </div>
+    <div class="image_animation">
+    <div class="slides">
+      <div class="slide slide-1">
+        <img
+          src="https://www.dropbox.com/scl/fi/t5vo2d3ppfftuqogppska/1.jpg?rlkey=yp486zaegmehrljdhq0p67phb&st=3wo4duec&raw=1"
+          alt=""
+        />
+      </div>
+
+      <div class="slide slide-2">
+        <img
+          src="https://www.dropbox.com/scl/fi/ve76tqno3vktrpolwei4j/2.jpg?rlkey=n9xsiczgpnuetrlji98t5tm5e&st=7enajc0n&raw=1"
+          alt=""
+        />
+      </div>
+      <div class="slide slide-3">
+        <img
+          src="https://www.dropbox.com/scl/fi/fv4onqyktrnac49rmvhi6/mp3.webp?rlkey=26am7g9300qsvxfrr6xkq3jsx&st=e7y21boe&raw=1"
+          alt=""
+        />
+      </div>
+      <div class="slide slide-4">
+        <img
+          src="https://www.dropbox.com/scl/fi/g7vizktnllp6wdud2blui/mp1.webp?rlkey=7qfjg6qfiki8so0y8656ekjnq&st=ra458aa8&raw=1"
+          alt=""
+        />
+      </div>
+      <div class="slide slide-5">
+        <img
+          src="https://www.dropbox.com/scl/fi/caobjcod0k8et7qy0bnvq/shloka-11.jpg?rlkey=h8j2hlwagaasaksrrttuvaak0&st=26cmvdgf&raw=1"
+          alt=""
+        />
+      </div>
+    </div>
+    </div>
+     <div id="summary-container">
+      <h1>Introduction</h1><br></br>
+      <div id="para">
+        <p>
+           <p id="p1">In the two previous chapters, the Supreme Lord Shree Krishna declared that among all, bhakti is the highest, yet the simplest path of attaining Yog, or union with the Supreme. In this chapter, He reveals His supreme glories that inspire reverence, devotion, and awe. Although Shree Krishna stands in front of Arjun in His personal form, it should not be mistaken to possess human personality.</p></br>
+
+ <p id="p2">At the beginning of creation, the Supreme Lord creates innumerable life-forms with His material energy. And at dissolution, He absorbs them back into Himself, and in the next cycle of creation, He manifests them again. Similar to the mighty winds that blow everywhere yet always stay within the sky, all living beings’ dwell within God. However, He remains ever aloof and detached from all these activities as a neutral observer by His divine Yogmaya power.</p></br>
+
+<p id="p3">To resolve the apparent confusion of the Hindu pantheon, Shree Krishna explains that there is only one God, who is the sole object of worship. For all living beings, He is the true friend, the support, refuge, and the final goal. Therefore, those souls who engage in exclusive devotion towards the Supreme Lord go to His abode and remain there. Those influenced by the ritualistic ceremonies described in the Vedas also attain the celestial abodes. However, when their merits are exhausted, they must return to earth.</p></br>
+
+<p id="p4">Saying this, Shree Krishna exalts the superiority of pure bhakti solely directed toward Him. Such a devotee lives in complete union with God’s will, doing everything for Him and offering everything to Him. Their pure devotion helps devotees attain the mystic union with God and releases them from the bondage of Karmas.</p></br>
+
+<p id="p5"> Shree Krishna asserts that He is impartial towards all creatures; He neither favors nor rejects anyone. Even if despicable sinners come to His shelter, He accepts them willingly and very quickly makes them pure and virtuous. Shree Krishna then says that He is seated within His devotees and will not let them perish. He preserves what they possess and provides them what they lack. Hence, we should dedicate our mind and body to Him, worship Him, always think of Him, and make Him our supreme goal.</p>
+        </p>
+        </div>
+     </div>
+     <div class="container">
+      <div class="inner_container" id="inner_container">
+      <h1>Introduction to shlokas</h1>
+       <ul>
+           <li class="Shloka-1" id="Shloka-1" onclick="navClick1('1')"><b><i><h3>Shloka-23<hr></i></h3></b> </br><p>Even those devotees who,endowed with faith,worship other gods, worship Me alone, O Arjuna, but by the wrong method.</p></li>
+           <li class="Shloka-2" id="Shloka-2" onclick="navClick2('2')"><b><i><h3>Shloka-24<hr></i></h3></b> </br><p>For I alone am the enjoyer and Lord of all sacrifices; but they do not know Me in reality, and thus they return to this mortal world.</p></li>
+           <li class="Shloka-3" id="Shloka-3" onclick="navClick3('3')"><b><i><h3>Shloka-25<hr></i></h3></b> </br><p>The worshippers of the gods go to them; the ancestor-worshippers go to the manes; the worshippers of the deities who preside over the elements go to them.</p></li>
+           <li class="Shloka-4" id="Shloka-4" onclick="navClick4('4')"><b><i><h3>Shloka-26<hr></i></h3></b> </br><p>Whoever offers Me with devotion a leaf, a flower, a fruit, or a little water, that, so offered devotedly by the pure-minded, I accept.</p></li>
+           <li class="Shloka-5" id="Shloka-5" onclick="navClick5('5')"><b><i><h3>Shloka-27<hr></i></h3></b> </br><p>Whatever you do, whatever you eat, whatever you offer in sacrifice, whatever you give, whatever austerity you practice, O Arjuna, do it as an offering to Me.</p></li>
+           <li class="Shloka-6" id="Shloka-6" onclick="navClick6('6')"><b><i><h3>Shloka-28<hr></i></h3></b> </br><p>Thus, you shall be freed from the bonds of actions yielding good and evil fruits; with the mind steadfast in the Yoga of renunciation, and liberated, you shall come to Me.</p></li>
+           <li class="Shloka-7" id="Shloka-7" onclick="navClick7('7')"><b><i><h3>Shloka-29<hr></i></h3></b> </br><p>I am the same to all beings; there is none hateful or dear to Me; but those who worship Me with devotion are in Me, and I am also in them.</p></li>
+           <li class="Shloka-8" id="Shloka-8" onclick="navClick8('8')"><b><i><h3>Shloka-30<hr></i></h3></b> </br><p>Even if the most sinful worships Me, with devotion to no one else, he should indeed be regarded as righteous, for he has rightly resolved.</p></li>
+           <li class="Shloka-9" id="Shloka-9" onclick="navClick9('9')"><b><i><h3>Shloka-31<hr></i></h3></b> </br><p>Soon he becomes righteous and attains eternal peace; O Arjuna, proclaim thou for certain that My devotee never perishes.</p></li>
+           <li class="Shloka-10" id="Shloka-10" onclick="navClick10('10')"><b><i><h3>Shloka-32<hr></i></h3></b> </br><p>For, taking refuge in Me, they who, O Arjuna, may be of a sinful birth—women, Vaisyas, and Sudras—attain the Supreme Goal.</p></li>
+       </ul>
+      </div>
+     </div>
+   </div>
+    <div id="youtube_video">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/P9QR_JknCk4?si=k7xegAfohlIvKXT9"></iframe>
+      </div>
+   <div id="links">
+   <h1>Related Links</h1>
+   <div id="related-links">
+        <div id="others">
+            <div class="link-container">
+                <a href="https://www.radhakrishnatemple.net/" target="_blank">Radha Krishna Temple of Dallas</a>
+                <a href="https://swamimukundananda.org/" target="_blank">About Swamiji</a>
+                <a href="https://jkyog.in/en/" target="_blank">JKYog USA</a>
+                <a href="https://mydailysadhana.org/" target="_blank">Daily Sadhana</a>
+            </div>
+        </div>
+
+        <div id="youtube">
+            <div class="link-container">
+                <a href="https://www.youtube.com/c/SwamiMukundananda" target="_blank"><i class="fab fa-youtube"></i>Swami Mukundananda - English</a>
+                <a href="https://www.youtube.com/c/SwamiMukundanandaHindi" target="_blank"><i class="fab fa-youtube"></i>Swami Mukundananda - Hindi</a>
+                <a href="https://www.youtube.com/channel/UCyWXYryEPLguJa9vl7EoxTQ" target="_blank"><i class="fab fa-youtube"></i>Holy Bhagavad Gita - Telugu</a>
+                <a href="https://www.youtube.com/channel/UCHjP4rpEuAy2H8NQwA5ZxjQ" target="_blank"><i class="fab fa-youtube"></i>Holy Bhagavad Gita - Tamil</a>
+            </div>
+        </div>
+
+        <div id="facebook">
+            <div class="link-container">
+                <a href="https://www.facebook.com/Swami.Mukundananda/" target="_blank"><i class="fab fa-facebook"></i>Swami Mukundananda</a>
+                <a href="https://www.facebook.com/BhagavadGitabySwamiMukundananda/" target="_blank"><i class="fab fa-facebook"></i>The Bhagavad Gita</a>
+                <a href="https://www.facebook.com/jkyog.india/" target="_blank"><i class="fab fa-facebook"></i>JKYog India</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+   `;
+};
+
+
+    // Function to switch to Interface 2
+    window.navClick1 = async function (shloka1) {
+        window.currentShlokaNum = shloka1;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <header>
+        <div id="sloka1-border">
+  <h1>Bhagavad Gita: Chapter-9, Verse-23</h1>
+</div>
+
+<div id="sloka1-mainborder">
+  <div id="navClick1">
+    <div id="border1">
+    <h1 id="navClick">
+      येऽप्यन्यदेवता भक्ता यजन्ते श्रद्धयाऽन्विताः।</br> तेऽपि मामेव कौन्तेय यजन्त्यविधिपूर्वकम्।।
+    </h1>
+
+   <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/y0ajz2b3sxzrfdv4ssawm/9-23.mp3?rlkey=y5gqo5f0u6isnoqog14xp8uby&st=zb5bxlsx&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/y0ajz2b3sxzrfdv4ssawm/9-23.mp3?rlkey=y5gqo5f0u6isnoqog14xp8uby&st=zb5bxlsx&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/ktgx3yoa5m4hezbtukavn/9.23-2-...mp3?rlkey=kff355ml82dxqhy1jx42nyfo1&st=ay8yksf8&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="changeText('1')"><b>Telugu</b></button>
+      <button onclick="changeText('2')"><b>English</b></button>
+      <button onclick="changeText('3')"><b>Malayalam</b></button>
+      <button onclick="changeText('4')"><b>Sanskrit</b></button>
+      <button onclick="changeText('5')"><b>Odisha</b></button>
+    </div>
+    </div>
+
+    <h3 id="word-to-word-meaning2">Word to Word Meaning</h3>
+    <p id="word-to-word-meaning">
+      ये (ye) = those who<br><br>
+      अपि (api) = even<br><br>
+      अन्यदेवता (anyadevatā) = other deities (literally, "other gods")<br><br>
+      भक्ता (bhaktāḥ) = devotees<br><br>
+      यजन्ते (yajante) = worship<br><br>
+      श्रद्धया (śraddhayā) = with faith<br><br>
+      अन्विताः (anvitāḥ) = endowed with, connected with<br><br>
+      ते (te) = they<br><br>
+      अपि (api) = also<br><br>
+      माम् (mām) = Me (referring to Lord Krishna)<br><br>
+      एव (eva) = only<br><br>
+      कौन्तेय (kaunteya) = O son of Kunti (Arjuna)<br><br>
+      यजन्ति (yajanti) = worship<br><br>
+      अविधिपूर्वकम् (avidhipūrvakam) = without following the prescribed rules or regulations (incorrectly, or inappropriately)<br><br>
+    </p>
+
+    <div id="commentary">
+        <h2 id="commentary21">Commentary</h2>
+       <p id="commentary1"><b>1.Unity of All Worship</b></br>
+        This shloka highlights the central idea of the Gita that all forms of worship ultimately reach the Supreme Being, even if the devotees are unaware of it. Lord Krishna, as the speaker, identifies Himself with the ultimate, universal reality (Brahman). Worship of other deities is seen as indirect worship of the Supreme because all divine powers emanate from the same ultimate source.</br></br>
+        2.<b>Faith and Devotion</b></br>
+        The verse acknowledges the sincerity of devotees who worship other deities (anya-devatā). Their faith (śraddhā) is not dismissed but recognized. However, Krishna points out that such worship, while sincere, is performed in a way that is "improper" (avidhi-pūrvakam) because it lacks awareness of the ultimate unity behind all divinities.</br></br>
+        3.<b>Improper Worship (Avidhi-pūrvakam)</b></br>
+        Worship becomes "improper" when it is not aligned with the understanding of the singularity of the Supreme Being. Krishna does not criticize such worship but gently redirects attention to the higher understanding of divinity as one, beyond individual forms and names.</br></br>
+        4.<b>Inclusivity and Guidance</b></br>
+        This shloka is an inclusive affirmation of diverse religious practices while simultaneously guiding devotees toward a more profound understanding. It teaches that while all paths have value, the ultimate goal should be to recognize the oneness behind all forms of divinity.
+        </p>
+
+      <div id="commentaryimage">
+        <img src="https://www.dropbox.com/scl/fi/tekvczjbf2difbgv2m736/shloka1.jpg?rlkey=jmivlejzrlsijh092y34hid4f&st=u7r8dy2a&raw=1">
+        </div>
+      <div id="summary">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">This verse emphasizes that all forms of worship ultimately reach Krishna (the Supreme Being), even if directed toward other deities. However, the method of such worship is considered improper because it is not aligned with the direct understanding of Krishna's supreme nature. Worshiping other deities with faith is acknowledged, but it reflects an indirect and less complete approach to understanding the ultimate reality. Krishna encourages direct devotion to Him as the ultimate source of all creation and the one who empowers all other deities.</p>
+    </div>
+  </div>
+  <div id="youtube_video1">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/OQHDOrRzIDA?si=lR_SLVQP20rXaN6S"></iframe>
+      </div>
+      <button id="next1" 
+      onclick="navClick2()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+      </div>
+  <button id="btn" onclick="clickHere()">Go to home page</button>
+</div>
+        
+      `;
+      };
+
+      window.navClick2 = async function (shloka2) {
+        window.currentShlokaNum = shloka2;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-24</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick2">
+          <div id="border1">
+          <h1 id="navClick" >अहं हि सर्वयज्ञानां भोक्ता च प्रभुरेव च।</br> न तु मामभिजानन्ति तत्त्वेनातश्च्यवन्ति ते।।</h1>
+            <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/ueyfbbnblw0vixdcvcll2/9-24.mp3?rlkey=3qirf867oq6dfmclb0p4yzj3q&st=d51r67ne&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/ueyfbbnblw0vixdcvcll2/9-24.mp3?rlkey=3qirf867oq6dfmclb0p4yzj3q&st=d51r67ne&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/8lz4yhp3bjd7w2wvxqpql/9.24-2-...mp3?rlkey=1dwleepiacmty3h30sx0m7cmd&st=24i6sl2f&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+    </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to Word Meaning</h3>
+          <p id="word-to-word-meaning">
+            अहं = I<br><br>
+             हि = indeed<br><br>
+            सर्व = all<br><br>
+            यज्ञानां = of the sacrifices<br><br>
+भोक्ता = enjoyer<br><br>
+च = and<br><br>
+प्रभुः = Lord<br><br>
+एव = only<br><br>
+च = and<br><br>
+न = not<br><br>
+तु = but<br><br>
+माम् = Me<br><br>
+अभिजानन्ति = know (understand)<br><br>
+तत्त्वेन = in truth (the essence)<br><br>
+आत = hence<br><br>
+अश्च्यवन्ति = fall down (go astray, get lost)<br><br>
+ते = they<br><br>
+            </p>
+        <div id="commentary2">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">Shree Krishna now explains the drawback in worshipping the celestial gods.  By virtue of the powers bestowed upon them by the Supreme Lord, they do possess the ability to grant material favors, but they cannot liberate their devotees from the cycle of life and death.  They can only offer to others what they themselves possess.  When the celestial gods themselves are not liberated from samsara, then how can they release their devotees from it?  On the other hand, those whose understanding is proper offer their entire veneration at the feet of God Himself, and when their devotion reaches the stage of perfection, they go beyond the world of mortals to the divine Abode.</p>
+        </div>
+        <div id="commentaryimage2">
+           <img src="https://www.dropbox.com/scl/fi/697qhn36d6bl9zicud57b/shloka-14.avif?rlkey=tg9u8r2vbscut0zoe7xq5hl43&st=5reommwh&raw=1">
+        </div>
+        <div id="summary2">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Krishna explains that He is the ultimate recipient and controller of all yajñas (sacrifices and offerings). Although people may perform rituals and sacrifices with dedication, their efforts do not lead to liberation if they fail to understand Krishna's supreme nature. Such ignorance causes them to deviate from the ultimate goal, which is union with the Supreme. Krishna highlights the importance of recognizing Him as the ultimate purpose behind all spiritual practices.</p>
+        </div>
+        <div id="youtube_video2">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/S_7Jtw5OqgI?si=07kQgyV65E1HCmQU"></iframe>
+      </div>
+      <button id="prev" onclick="navClick1()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick3()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+        <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+        </header>
+      `;
+      };
+
+      window.navClick3 = async function (shloka3) {
+        window.currentShlokaNum = shloka3;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-25</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick3">
+          <div id="border1">
+          <h1 id=navClick>यान्ति देवव्रता देवान् पितृ़न्यान्ति पितृव्रताः।</br> भूतानि यान्ति भूतेज्या यान्ति मद्याजिनोऽपि माम्।।</h1>
+        <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/239519h9flr4dqlze7bx9/9-25.mp3?rlkey=7f6azbychy3mpt6odwv25uq5t&st=qk6i5q08&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/239519h9flr4dqlze7bx9/9-25.mp3?rlkey=7f6azbychy3mpt6odwv25uq5t&st=qk6i5q08&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/zpx0gdu825kebggowf4lj/9.25-2-...mp3?rlkey=y8gbofmae9erpoz4x3652czyi&st=6oe59lxq&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+    </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to word meaning</h3>
+          <p id="word-to-word-meaning">यान्ति = go<br><br>
+देवव्रता = those who are devoted to the gods<br><br>
+देवान् = the gods<br><br>
+पितृणि = the ancestors (pitrus)<br><br>
+यान्ति = go<br><br>
+पितृव्रताः = those who are devoted to the ancestors<br><br>
+भूतानि = the beings (creatures)<br><br>
+यान्ति = go<br><br>
+भूतेज्याः = those who worship the beings (elements, spirits)<br><br>
+यान्ति = go<br><br>
+मद्याजिनः = those who worship Me with devotion (through the worship of the Divine)<br><br>
+अपि = also<br><br>
+माम् = Me<br><br>
+            </p>
+        <div id="commentary3">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">
+         This shloka highlights the principle of spiritual aspiration and the destination it determines. Krishna explains that the object of one’s devotion and faith decides the ultimate outcome of their spiritual journey.</br></br>
+         <b>1.Inclusiveness of Faiths:</b> This verse acknowledges the diversity in spiritual practices and validates different paths. However, it underscores that the fruit of one's devotion is consistent with the object of their worship. Krishna subtly emphasizes that devotion to the Supreme (Himself) leads to liberation and eternal union, which is distinct from temporary gains in other realms.</br></br>
+         <b>2.Philosophical Perspective:</b> The shloka encapsulates the law of attraction in spirituality: what we seek is what we attain. It underlines the Gita's broader teaching that while the paths may vary, the ultimate goal is to transcend worldly attachments and unite with the eternal.</br></br>
+        <b> 3.Message for Practitioners:</b> Krishna invites seekers to aim for the highest goal—realization of the Supreme Consciousness—rather than settling for transient benefits. While all forms of worship are respected, He encourages a direct, personal relationship with the Divine, which leads to eternal fulfillment.
+         </p>
+         </div>
+        <div id="commentaryimage3">
+           <img src="https://www.dropbox.com/scl/fi/h5x9k1g25c84x70thcjdn/shloka-2.jpg?rlkey=snvb5myarst8awcwg4sb8i984&st=5b1nzb23&raw=1">
+        </div>
+        <div id="summary3">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">This verse explains that the destination of the soul after death is determined by the object of one's worship. Devotees who focus on demigods, ancestors, or spirits attain those realms. However, those who worship Krishna with devotion attain Him, the Supreme Being. Krishna emphasizes the superiority of direct devotion to Him, as it leads to eternal liberation, unlike the temporary results gained by worshiping other entities.</p>
+        </div>
+         </div>
+         <div id="youtube_video3">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/ycxQ98pRnZM?si=rYGHHmrfmWA_NJ-G"></iframe>
+      </div>
+      <button id="prev" onclick="navClick2()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick4()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+         <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+      `;
+      };
+
+      window.navClick4 = async function (shloka4) {
+        window.currentShlokaNum = shloka4;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-26</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick4">
+          <div id="border1">
+          <h1 id="navClick">पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।</br> तदहं भक्त्युपहृतमश्नामि प्रयतात्मनः।।</h1>
+        <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/duaemyefgdx5nt2b5nxho/9-26.mp3?rlkey=6ay04075gefg9flo08h6sxvfu&st=oq4f79wk&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/duaemyefgdx5nt2b5nxho/9-26.mp3?rlkey=6ay04075gefg9flo08h6sxvfu&st=oq4f79wk&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/ynu40tnorrwoyhyhcbiw8/9.26-2-...mp3?rlkey=l2ejxqws0t16hd1gyls059qrz&st=xbet29q6&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+    </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to word meaning</h3>
+          <p id="word-to-word-meaning">पत्रं = leaf<br><br>
+पुष्पं = flower<br><br>
+फलं = fruit<br><br>
+तोयं = water<br><br>
+यः = who<br><br>
+मे = to Me<br><br>
+भक्त्या = with devotion<br><br>
+प्रयच्छति = offers<br><br>
+तत् = that<br><br>
+अहम् = I<br><br>
+भक्त्युपहृतम् = offered with devotion<br><br>
+अश्नामि = accept, consume<br><br>
+प्रयतात्मनः = of the devotee, who is dedicated</p>
+
+        <div id="commentary4">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">This verse encapsulates the essence of Bhakti (devotion) and the Lord's boundless love for His devotees. Let’s break down the key aspects:</br></br>
+         <b> 1.Simplicity in Offering:</b></br>
+         Krishna states that He accepts even the simplest offerings—a leaf, flower, fruit, or water. This conveys that the value of the offering is not in its material worth but in the sincerity and love with which it is offered. This makes devotion accessible to everyone, regardless of wealth or status.</br></br>
+        <b> 2.Primacy of Devotion:</b>
+          The word "bhaktya" (with devotion) is crucial. It highlights that the offering must be made with genuine love and a pure heart. It is the sentiment behind the act, not the act itself, that pleases the Lord.</br></br>
+        <b> 3. Inclusiveness:</b>
+           By specifying ordinary items like a leaf, flower, fruit, or water, Krishna breaks down barriers to worship. Anyone can practice devotion, as these are universally available and require no elaborate rituals or expenses.</br></br>
+         <b> 4. Purity of the Devotee:</b>
+         Krishna emphasizes "prayatatmanah," which refers to those with a pure and disciplined mind. Purity of heart and intention amplifies the connection between the devotee and the Divine.
+         </p>
+        </div>
+        <div id="commentaryimage4">
+        <img src="https://www.dropbox.com/scl/fi/wudjivrf6c0ikdzx5nnd0/shloka-3.jpg?rlkey=fl6dw3an7fqwi0uw099kqru1r&st=nzizrvc2&raw=1">
+        </div>
+        <div id="summary4">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Krishna reveals that He does not require extravagant offerings. A simple offering, made with love and devotion—whether it is a leaf, a flower, fruit, or water—will be accepted by Him. The emphasis is on the devotion and sincerity of the heart behind the offering, rather than the material value of the gift itself. Krishna reassures that any humble, heartfelt offering made with pure devotion is cherished by Him. </p>
+        </div>
+        <div id="youtube_video4">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/3m1pTXUn6qQ?si=CPv-wzP7FGTtqoZg"></iframe>
+      </div>
+      <button id="prev" onclick="navClick3()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick5()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+         <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+      `;
+      };
+
+      window.navClick5 = async function (shloka5) {
+        window.currentShlokaNum = shloka5;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-27</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick5">
+          <div id="border1">
+          <h1 id="navClick">यत्करोषि यदश्नासि यज्जुहोषि ददासि यत्।</br> यत्तपस्यसि कौन्तेय तत्कुरुष्व मदर्पणम्।।</h1>
+        <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/n66cr7ly2na4tja389fmd/9-27.mp3?rlkey=eriyghdjpeuhnseaiqhefknbw&st=03y0s21d&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/n66cr7ly2na4tja389fmd/9-27.mp3?rlkey=eriyghdjpeuhnseaiqhefknbw&st=03y0s21d&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/13ab0am4pnanfnbnvfexv/9.27-2-...mp3?rlkey=w5yzp4tu50rsih1qipp5y118x&st=igdfivis&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+       </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to word meaning</h3>
+          <p id="word-to-word-meaning">यत् = whatever<br><br>
+करोषि = you do<br><br>
+यद = whatever<br><br>
+अश्नासि = you eat<br><br>
+यत् = whatever<br><br>
+जुहोषि = you sacrifice (offer)<br><br>
+ददासि = you give<br><br>
+यत् = whatever<br><br>
+तपस्यसि = you perform austerities<br><br>
+कौन्तेय = O Kaunteya (son of Kunti)<br><br>
+तत् = that<br><br>
+कुरुष्व = do<br><br>
+मदर्पणम् = as an offering to Me<br><br>
+            </p>
+            <div id="commentary5">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1"><b>1.Integration of Life and Spirituality:</b>
+        Lord Krishna emphasizes that every action, no matter how mundane or significant, can become a sacred act if done with a sense of surrender to the Divine. This teaching bridges the gap between the spiritual and material aspects of life, suggesting that spirituality is not confined to rituals or isolated practices.</br></br>
+        <b>2.Selflessness:</b>
+        By urging Arjuna to dedicate his actions to the Divine, Krishna highlights the importance of detachment from the fruits of actions (karma-phala-tyaga). When one acts without attachment, the ego diminishes, leading to liberation (moksha).</br></br>
+        <b>3.Equality of All Actions:</b>
+        Krishna does not differentiate between seemingly grand sacrifices and simple actions like eating or giving. This reflects the universality of devotion — even the smallest acts, when performed with love and surrender, hold equal spiritual significance.</br></br>
+        <b>4.Path of Devotion (Bhakti Yoga):</b>
+        This verse encapsulates the essence of Bhakti Yoga, where the focus is not merely on renouncing the world but on offering every thought, word, and deed to God. It reinforces the idea that devotion is not restricted to rituals but can be expressed in daily life.</br></br>
+        <b>5.Freedom from Bondage:</b>
+        When actions are dedicated to the Divine, they cease to bind the doer to the cycle of karma. This surrender purifies the mind and aligns the individual with their higher purpose.
+        </p>
+        </div>
+        <div id="commentaryimage5">
+        <img src="https://www.dropbox.com/scl/fi/e3txdtcecx7tn0ty6q21i/shloka-12.webp?rlkey=t5kuvkpmr76fe103k8oefnkzu&st=enqr3ve9&raw=1">
+        </div>
+        <div id="summary5">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Krishna advises Arjuna to dedicate all his actions—whether they involve work, eating, sacrifices, charity, or austerities—to Him. By doing so, every activity becomes a form of devotion. Krishna emphasizes that true spiritual practice involves offering all deeds and intentions to the Divine, transforming ordinary actions into expressions of love and surrender to God. This approach leads to liberation and spiritual fulfillment.</p>
+        </div>
+        <div id="youtube_video5">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/qiWrb-fw8mQ?si=ED1PUlAksOCPm05c"></iframe>
+      </div>
+      <button id="prev" onclick="navClick4()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick6()"><a href="#sloka-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+          <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+      `;
+      };
+
+      window.navClick6 = async function (shloka6) {
+        window.currentShlokaNum = shloka6;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-28</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick6">
+          <div id="border1">
+          <h1 id="navClick">शुभाशुभफलैरेवं मोक्ष्यसे कर्मबन्धनैः।</br> संन्यासयोगयुक्तात्मा विमुक्तो मामुपैष्यसि।।</h1>
+        <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/tda4ionn9ovv0l5tirq5g/9-28.mp3?rlkey=f9k0tsatsggt5ywshygbs7aoe&st=lhrqmmb8&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/tda4ionn9ovv0l5tirq5g/9-28.mp3?rlkey=f9k0tsatsggt5ywshygbs7aoe&st=lhrqmmb8&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/dg2yokxf1kwjr9r9zfwe8/9.28-2-...mp3?rlkey=8aoao81eldaq3j28xj9l04e0g&st=kja4yzin&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+       </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to meaning</h3>
+          <p id="word-to-word-meaning">शुभाशुभफलैः = with the results of both good and bad (actions)<br><br>
+एवं = thus<br><br>
+मोक्ष्यसे = you will be liberated<br><br>
+कर्मबन्धनैः = from the bondage of actions (karma)<br><br>
+संन्यासयोगयुक्तात्मा = the one who is united in the yoga of renunciation<br><br>
+विमुक्तः = liberated<br><br>
+माम् = Me<br><br>
+अपैष्यसि = will attain</p>
+        <div id="commentary6">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">This śloka conveys profound guidance on the path to liberation through selfless devotion and renunciation. Below is a detailed explanation:</br></br>
+          <b>1. Offering Actions to the Divine:</b>
+          Lord Krishna advises that one should dedicate all actions to Him. This process transforms even mundane activities into an act of devotion. By doing so, the individual transcends personal motives and attachments to the outcomes of their deeds.</br></br>
+          <b>2. Freedom from Dualities:</b>
+          Actions typically yield two types of results—śubha (auspicious) and aśubha (inauspicious). These results bind individuals to the cycle of karma and rebirth. By surrendering actions to God, one neutralizes this bondage and attains inner freedom.</br></br>
+          <b>3.Karma-Bandhana (Bondage of Actions):</b>
+          Every action, when performed with desire or attachment, creates karma that ties the soul to the material world. Renouncing attachment to the fruits of actions frees the self from this entanglement.</br></br>
+          <b>4. Liberation and Union with God:</b>
+          Krishna emphasizes that this approach leads to liberation (mokṣa) and ultimately allows the individual to attain His divine presence. This liberation is not merely a release from worldly suffering but the realization of eternal bliss and unity with the Divine.
+          </p>
+        </div>
+        <div id="commentaryimage6">
+        <img src="https://www.dropbox.com/scl/fi/nhtpeu22qg7o2xtsjmjac/shloka-5.jpg?rlkey=2fky0410wbr191gjtbxmpqkjv&st=etdrqdyq&raw=1">
+        </div>
+        <div id="summary6">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Krishna advises Arjuna to dedicate all his actions—whether they involve work, eating, sacrifices, charity, or austerities—to Him. By doing so, every activity becomes a form of devotion. Krishna emphasizes that true spiritual practice involves offering all deeds and intentions to the Divine, transforming ordinary actions into expressions of love and surrender to God. This approach leads to liberation and spiritual fulfillment.</p>
+        </div>
+        <div id="youtube_video6">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/dIXkho2vs9g?si=O2xmhjgNglNEczuQ"></iframe>
+      </div>
+      <button id="prev" onclick="navClick5()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick7()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+          <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+      `;
+      };
+
+      window.navClick7 = async function (shloka7) {
+        window.currentShlokaNum = shloka7;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-29</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick7">
+          <div id="border1">
+          <h1 id="navClick">समोऽहं सर्वभूतेषु न मे द्वेष्योऽस्ति न प्रियः।</br> ये भजन्ति तु मां भक्त्या मयि ते तेषु चाप्यहम्।। </h1>
+        <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/7oc4wzbsked8yzdj0k2w1/9-29.mp3?rlkey=r2cjnc8tcv57ze6n9b3ps3fbs&st=g7ra6w56&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/7oc4wzbsked8yzdj0k2w1/9-29.mp3?rlkey=r2cjnc8tcv57ze6n9b3ps3fbs&st=g7ra6w56&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/75du9mwd3ejg0ckait651/9.29-2-...mp3?rlkey=66466y2f20w3gjpxq8wb3t7rx&st=soufdovt&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+       </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to word meaning</h3>
+          <p id="word-to-word-meaning">समः = equal<br><br>
+अहम् = I<br><br>
+सर्वभूतेषु = in all living beings<br><br>
+न = not<br><br>
+मे = to Me<br><br>
+द्वेष्यः = hateful<br><br>
+अस्ति = there is<br><br>
+न = not<br><br>
+प्रियः = dear<br><br>
+ये = those who<br><br>
+भजन्ति = worship<br><br>
+तु = indeed<br><br>
+मां = Me<br><br>
+भक्त्या = with devotion<br><br>
+मयि = in Me<br><br>
+ते = they<br><br>
+तेषु = in them<br><br>
+च = and<br><br>
+अपि = also<br><br>
+अहम् = I (am)</p>
+        <div id="commentary7">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">This verse highlights the impartial and universal nature of Lord Krishna's divine love and establishes a crucial principle of equality in spirituality:</br></br>
+         <b>1. Equality of the Divine:</b>
+         Krishna declares that He is equally disposed to all beings. This means that God's love is not conditional or biased by external factors such as caste, creed, gender, or social status. God treats all beings as equal manifestations of Himself.</br></br>
+         <b>2.No Favoritism:</b>
+         Krishna explicitly mentions that He has neither hatred nor favoritism towards anyone. This suggests that divine grace is not arbitrary but rather depends on an individual's inner disposition and actions.</br></br>
+         <b>3.Special Bond with Devotees:</b>
+         While God is impartial, a unique relationship is formed with those who worship Him with devotion. This is not favoritism but rather the result of the devotee's sincere surrender and alignment with divine principles. Such devotees experience a deeper communion with God—described here as "dwelling in Me, and I too dwell in them." This is akin to a reciprocal relationship that arises out of pure love and dedication.</br></br>
+         <b>4.Universal Teachings:</b>
+         This verse serves as a reminder that spirituality transcends the barriers of human discrimination. Regardless of one's background or worldly status, anyone who approaches the divine with sincerity and devotion can experience His presence.
+         </p>
+        </div>
+        <div id="commentaryimage7">
+        <img src="https://www.dropbox.com/scl/fi/maqz2v1ckde8555nv0bdl/shloka-4.jpg?rlkey=06ma0vdg30uxaqeqke7j0wsor&st=ks69s6qj&raw=1">
+        </div>
+        <div id="summary7">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Krishna advises Arjuna to dedicate all his actions—whether they involve work, eating, sacrifices, charity, or austerities—to Him. By doing so, every activity becomes a form of devotion. Krishna emphasizes that true spiritual practice involves offering all deeds and intentions to the Divine, transforming ordinary actions into expressions of love and surrender to God. This approach leads to liberation and spiritual fulfillment.</p>
+        </div>
+        <div id="youtube_video7">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/2-btYT4Enyw?si=YEOdVDM2213EAfaw"></iframe>
+      </div>
+      <button id="prev" onclick="navClick6()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick8()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+          <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+      `;
+      };
+
+      window.navClick8 = async function (shloka8) {
+        window.currentShlokaNum = shloka8;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-30</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick8">
+          <div id="border1">
+          <h1 id="navClick">अपि चेत्सुदुराचारो भजते मामनन्यभाक्।</br> साधुरेव स मन्तव्यः सम्यग्व्यवसितो हि सः।।</h1>
+        <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/vogmoeacbacpu9261i0rg/9-30.mp3?rlkey=v3p6nq5sbi8yqk8rvcerv9942&st=mjauhepl&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/vogmoeacbacpu9261i0rg/9-30.mp3?rlkey=v3p6nq5sbi8yqk8rvcerv9942&st=mjauhepl&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/1lf5nxdvulb0r86m89oj8/9.30-2-...mp3?rlkey=mnnwzfcjupdq5ypqztj420z9k&st=sjk1c3gq&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+       </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to word meaning</h3>
+          <p id="word-to-word-meaning">अपि = even if<br><br>
+चेत् = he<br><br>
+सुदुराचारः = of extremely bad conduct (sinner)<br><br>
+भजते = worships<br><br>
+माम् = Me<br><br>
+अनन्यभाक् = with undivided devotion<br><br>
+साधुः = he is a saint (good person)<br><br>
+एव = indeed<br><br>
+स = he<br><br>
+मन्तव्यः = should be considered<br><br>
+सम्यक् = properly<br><br>
+व्यवसितः = well resolved (resolved in mind)<br><br>
+हि = for certainly<br><br>
+सः = he</p>
+        <div id="commentary8">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">This verse emphasizes the power of sincere devotion over any negative past actions. In this shloka, Lord Krishna assures Arjuna (and by extension, all devotees) that even those who have committed severe sins can be redeemed if they turn to Him with true devotion. The key idea here is that Bhakti (devotion), when offered with complete sincerity, is a transformative force that purifies the heart and leads to liberation.</br></br>
+         <b> 1.Inclusiveness of Devotion:</b> Krishna reassures that no matter the past actions of a person, if they approach Him with sincere devotion (Bhakti), they will be forgiven. This teaches that the Divine is merciful and compassionate, always ready to accept any soul, regardless of their background or past misdeeds.</br></br>
+        <b>2.The Importance of Surrender:</b> The verse highlights the importance of surrender to the Divine with unwavering faith. A person who takes refuge in God, without reservation, can attain liberation. The term "sashvatam samashritam" refers to the eternal, spiritual abode that such a devotee reaches.</br></br>
+         <b> 3.Moral and Ethical Transformation:</b> Krishna’s statement suggests that the act of devotion has the potential to cleanse all sins. It is not merely an act of ritual but an internal transformation, where devotion leads to a reformation of character, understanding, and consciousness.</br></br>
+         <b> 4.The Role of Grace:</b> The verse reflects the concept of divine grace, where God’s mercy transcends the actions of the individual. It reinforces the idea that grace is not earned but freely given to those who truly seek it.</br></br>
+         <b> 5.Equality of Souls:</b> Krishna’s message here is egalitarian in nature. It removes the notion that only a certain class or a righteous person is entitled to liberation. It opens the path to all, regardless of their history, emphasizing that transformation through devotion is available to all human beings.
+          </p>
+        </div>
+        <div id="commentaryimage8">
+        <img src="https://www.dropbox.com/scl/fi/h9b5ee7k1bhuuitldoboh/shloka-6.jpg?rlkey=hjt1gw8d0eue8yi1ctw4wq2im&st=z1gin6bt&raw=1">
+        </div>
+        <div id="summary8">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Lord Krishna assures that even if a person has committed the gravest of sins or lived a life of misconduct (su-durāchāro), if they sincerely dedicate themselves to Him with unwavering devotion (ananya-bhāk), they are to be considered a sādhu (a virtuous person). Such a devotee is to be viewed as a true saint (sādhur eva sa mantavyaḥ), because their devotion and sincerity in seeking God are what truly define their character, and the Lord Himself assures that they are on the right path (samyag vyavasito hi saḥ).</p>
+        </div>
+        <div id="youtube_video8">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/Wk88C8FR6KI?si=HT8L1hseOpTkVnGJ"></iframe>
+      </div>
+      <button id="prev" onclick="navClick7()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick9()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+          <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+      `;
+      };
+
+      window.navClick9 = async function (shloka9) {
+        window.currentShlokaNum = shloka9;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-31</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick9">
+          <div id="border1">
+          <h1 id="navClick">क्षिप्रं भवति धर्मात्मा शश्वच्छान्तिं निगच्छति।</br> कौन्तेय प्रतिजानीहि न मे भक्तः प्रणश्यति।।</h1>
+        <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/gklhrzchqnntpveogfzl7/9-31.mp3?rlkey=1q2r3bc7wttxkraiuj3ovl6yj&st=44qplzbc&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/gklhrzchqnntpveogfzl7/9-31.mp3?rlkey=1q2r3bc7wttxkraiuj3ovl6yj&st=44qplzbc&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/u3nujza8sge4t6db7w4r3/9.31-2-...mp3?rlkey=7m29fifwaw6wpx2pmweo2sjwk&st=fjdsiqlv&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+       </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to word meaning</h3>
+          <p id="word-to-word-meaning">क्षिप्रम् = quickly<br><br>
+भवति = becomes<br><br>
+धर्मात्मा = a righteous soul (one who follows dharma)<br><br>
+शश्वत् = always<br><br>
+शान्तिम् = peace<br><br>
+निगच्छति = attains<br><br>
+कौन्तेय = O Kaunteya (son of Kunti, referring to Arjuna)<br><br>
+प्रतिजानीहि = you must declare (declare firmly)<br><br>
+न = not<br><br>
+मे = to Me<br><br>
+भक्तः = the devotee<br><br>
+प्रणश्यति = perishes (is destroyed)</p>
+        <div id="commentary9">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">In this shloka, Lord Krishna highlights the power of devotion (bhakti) and its transformative effect on a person. He describes how sincere devotion can lead to the destruction of accumulated sins (pāpam) and purify the devotee’s heart and mind. By practicing bhakti, a person becomes free from the bondage of their past actions and worldly desires, leading them toward spiritual liberation (moksha).</br></br>
+          Krishna stresses the importance of faith and surrender to the divine. He assures that when one places their full trust in Him, their sins are eradicated, and they are protected from the consequences of past karma. The verse highlights the relationship between the devotee and the divine: the devotee's sincere worship and faith in God purify them, while God, in turn, becomes their guiding force, showing them the path to eternal peace and fulfillment.
+          </p>
+        </div>
+        <div id="commentaryimage9">
+        <img src="https://www.dropbox.com/scl/fi/caobjcod0k8et7qy0bnvq/shloka-11.jpg?rlkey=h8j2hlwagaasaksrrttuvaak0&st=ceo3qty4&raw=1">
+        </div>
+        <div id="summary9">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Lord Krishna assures Arjuna that anyone who sincerely dedicates themselves to Him, even if they have previously been sinful, will quickly transform into a righteous soul (dharmātmā). Such a devotee will attain eternal peace (śhaśhvach-chhāntiṁ). Krishna further declares that He guarantees that His devotee, who has unwavering faith and devotion, will never be lost or forsaken (na me bhaktaḥ praṇaśhyati).<br><br>Krishna is reassuring that anyone who turns to Him with genuine devotion will be protected and guided on the path to salvation, and they will ultimately attain peace and liberation. </p>
+        </div>
+        <div id="youtube_video9">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed/EZTTvd58WCk?si=qUTL_EI98RwTaFTP"></iframe>
+      </div>
+      <button id="prev" onclick="navClick8()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+      <button id="next" 
+      onclick="navClick10()"><a href="#sloka1-border">Next  <i class="fa-solid fa-arrow-right"></i></a></button>
+          <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+        </div>
+      `;
+      };
+
+      window.navClick10 = async function (shloka10) {
+        window.currentShlokaNum = shloka10;
+        const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="sloka1-border">
+            <h1>Bhagavad Gita: Chapter-9, Verse-32</h1>
+        </div>
+        <div id="sloka1-mainborder">
+        <div id="navClick10">
+          <div id="border1">
+          <h1 id="navClick">मां हि पार्थ व्यपाश्रित्य येऽपि स्युः पापयोनयः।</br> स्त्रियो वैश्यास्तथा शूद्रास्तेऽपि यान्ति परां गतिम्।।</h1>
+          <div class="audio-container">
+        <!-- Audio player -->
+        <audio id="audPlayer" controls>
+            <source src="https://www.dropbox.com/scl/fi/ell5bm2rad84w5h11dh7e/9-32.mp3?rlkey=4utl6e4ggisc5tx1zeqbtk1oo&st=ymcfs7l7&dl=0&raw=1" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Scrollable playlist container -->
+        <div class="scroll-container">
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/ell5bm2rad84w5h11dh7e/9-32.mp3?rlkey=4utl6e4ggisc5tx1zeqbtk1oo&st=ymcfs7l7&dl=0&raw=1')">MALE VOICE</button>
+            <button class="audio-track" onclick="changeAudio('https://www.dropbox.com/scl/fi/jyeu1yv3mp21jyb2mfkd3/9.32-2-...mp3?rlkey=msj5kyik4iad3vuheebz1ldjj&st=9502958v&dl=0&raw=1')">FEMALE VOICE</button>
+        </div>
+    </div>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+        <button onclick="changeText('4')"><b>Sanskrit</b></button>
+        <button onclick="changeText('5')"><b>Odisha</b></button>
+        </div>
+        </div>
+        <h3 id="word-to-word-meaning2">Word to word meaning</h3>
+          <p id="word-to-word-meaning">माम् = Me<br><br>
+हि = indeed<br><br>
+पार्थ = O Partha (Arjuna, son of Pritha)<br><br>
+व्यपाश्रित्य = taking refuge (in)<br><br>
+ये = those who<br><br>
+अपि = even<br><br>
+स्युः = are<br><br>
+पापयोनयः = of sinful birth (those born in lower or sinful families)<br><br>
+स्त्रियाँ = women<br><br>
+वैश्याः = merchants (the business class)<br><br>
+तथा = and also<br><br>
+शूद्राः = the laborers (the working class)<br><br>
+ते = they<br><br>
+अपि = also<br><br>
+यान्ति = attain<br><br>
+परां = supreme<br><br>
+गतिम् = goal (destination)</p>
+        <div id="commentary10">
+        <h2 id="commentary21">Commentary</h2>
+        <p id="commentary1">In this verse, Lord Krishna speaks to Arjuna, describing the qualities of those who are devoted to the Supreme Being and are free from material attachments.</br></br>
+          <b>1.Who are in the mode of goodness:</b></br>
+          The mode of goodness (Sattva) refers to the state of purity, knowledge, and harmony in the material world. It is the mode that is associated with spiritual understanding, wisdom, and the pursuit of truth.</br>
+          Krishna indicates that those who are in the mode of goodness are naturally inclined toward higher values and have a clearer understanding of their true nature, which leads them to devotion.</br></br>
+          <b>2. Devoted to the knowledge of the Absolute Truth:</b></br>
+          The knowledge of the Absolute Truth (Brahman or God) is the highest form of understanding in the Vedic tradition. It is the realization that the soul (Atman) is eternal and that the ultimate reality is divine.</br>
+          The verse suggests that those who seek the Absolute Truth through devotion and study of the sacred teachings are elevated spiritually.</br></br>
+         <b> 3. Perform devotional service:</b></br>
+           Devotional service (Bhakti) is the most direct path to liberation in the Bhagavad Gita. Krishna emphasizes the importance of serving the Supreme with sincerity and love, without expecting material rewards.</br>
+          This devotional service is done with the understanding that Krishna is the Supreme Personality of Godhead, and by offering service to Him, one purifies the heart and soul.</br></br>
+          <b>4.Exalted among all beings:</b></br>
+           Krishna declares that those who are devoted to Him with knowledge, purity, and service are the most exalted among all beings. Their spiritual elevation transcends all other forms of existence, as they are directly aligned with the divine will.</br></br>
+           <b>5.Devoted with a pure heart:</b></br>
+           Krishna emphasizes that the heart of a true devotee is pure. Purity of heart means having a mind and emotions free from selfish desires, pride, and ego. A pure heart is one that is completely devoted to the Supreme without any other distractions or ulterior motives.
+          </p>
+        </div>
+        <div id="commentaryimage10">
+        <img src="https://www.dropbox.com/scl/fi/usr816wga6us71wtgt25h/shloka-10.jpg?rlkey=fctya8nr18ea7p6ei9qo0upmc&st=g0v8fxlx&raw=1">
+        </div>
+        <div id="summary10">
+        <h2 id="summary21">Summary</h2>
+        <p id="summary1">In this verse, Lord Krishna explains to Arjuna that anyone who takes refuge in Him (vyapāśhritya) can attain the highest goal of life, Moksha, regardless of their past or social status. This includes people who are traditionally considered lower in society, such as women (striyo), merchants (vaiśhyās), and laborers (śhūdrās), as well as those born into sinful or less fortunate circumstances (pāpa-yonayaḥ).<br><br>Krishna reassures that these individuals, by surrendering to Him and dedicating themselves to Him with devotion, can also achieve the supreme spiritual goal and attain the parāṁ gatim (ultimate destination or liberation). The verse emphasizes the universality of Krishna’s grace and the idea that devotion to Him transcends all social and birth-based distinctions.
+         <br><br>This verse highlights the inclusivity of spiritual progress, where anyone, regardless of their background, can reach the highest state of liberation through sincere devotion to God.</p>
+        </div>
+        <div id="youtube_video10">
+      <iframe width="900" height="415" src="https://www.youtube.com/embed//mHGTC5-Bga8?si=Hd0ahfU_HNmkquY3"></iframe>
+      </div>
+      <button id="prev1" onclick="navClick9()">
+    <i class="fa-solid fa-arrow-left"></i> Prev
+</button>
+
+      </div>
+          <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+    `;
+};
+
+
+window.contact = async function (click1) {
+    window.clickhere=click1;
+    const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="contactbody">
+        <div id="contact">
+        <div id="shiva">
+            <img src="https://www.dropbox.com/scl/fi/wey39l6ap5swn47p4i5li/shiva.jpg?rlkey=ly5j1532ycwdbv7v8n182pb94&st=z60dojnj&raw=1" >
+            <b> R.Shiva </br>
+            Ph.No: 7093211385</br>
+            Email-id:regondashiva2414@gmail.com</b>
+        </div>
+        <div id="sridhar">
+            <img src="https://www.dropbox.com/scl/fi/r6no3bk9g79id8nvelns1/sridhar1.png?rlkey=zsvtv4v31bxzczc2mklkp8rt8&st=1c006b5u&raw=1" >
+            <b> P.Sridhar </br>
+             Ph.No: 6301610265</br>
+             Email-id:peddamanishisridhar@gmail.com</b>
+         </div>
+        <div id="amear">
+          <img src="https://www.dropbox.com/scl/fi/xo1667zl6nte9bkesug1s/amear-Photoroom.png?rlkey=pn839v7jxb8ovej25suhb6yd6&raw=1" >
+          <b> Shaik Amear </br>
+           Ph.No: 8106603895</br>
+           Email-id:amear.shaik1922@gmail.com</b>
+        </div>
+        </div>
+        <button id="btn" onclick="clickHere()">Go to home page</button>
+        </div>
+   `;
+};
+
+    window.home = async function (click1) {
+    window.clickhere=click1;
+    const container = document.getElementById('container');
+        container.innerHTML = `
+        <div id="container1">
+    <div id="container">
+    <div id="clickHere">
+      <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+       src="https://www.canva.com/design/DAGWz0GoziE/8Hz6xP31sKg1SKQLy2P8ew/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+     </iframe>
+     <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 1;">
+      <button  
+      onclick="clickHere()"style="padding: 10px 20px; font-size: 16px; color: white; background-color: #000000; border: none; border-radius: 5px; cursor: pointer; margin-bottom: 200px; margin-right: 30px;">
+               Explore!</button>
+    </div>
+  </div>
+  </div>
+</div>
+  `;
+};
+
+
+window.about = async function (click1) {
+    window.clickhere=click1;
+    const container = document.getElementById('container');
+        container.innerHTML = `
+        <div class="aboutcontainer">
+        <section class="intro-section">
+            <h1>About the Bhagavad Gita</h1>
+        </section>
+    
+        <section class="content-section">
+            <article>
+                <h2>Overview</h2>
+                <p>The Bhagavad Gita is a sacred text from the Mahabharata, presenting a dialogue between Arjuna and Krishna on life, duty, and spirituality.</p>
+                
+            
+                <h2>Philosophy</h2>
+                <p>This scripture offers insights into moral dilemmas and the pursuit of righteousness, emphasizing inner peace and purpose.</p>
+            
+                <h2>Impact</h2>
+                <p>The teachings of the Gita resonate across cultures, inspiring individuals to seek wisdom and live with integrity.</p>
+            
+                <h2>Swami Mukundananda</h2>
+                <p>Swami Mukundananda is a globally renowned spiritual teacher and the founder of JKYog. With degrees from IIT and IIM, he bridges the gap between modern science and ancient wisdom. His teachings make the profound knowledge of the Bhagavad Gita accessible to contemporary audiences.</p>
+            
+                <p>His teachings and guided meditations are widely available online, reaching millions worldwide.</p>
+            </article>
+        </section>
+        <button id="btn" onclick="clickHere()">Go to home page</button>
+    
+        <section class="footer-section">
+            <p>&copy; 2024 Bhagavad Gita. All Rights Reserved.</p>
+        </section>
+        
+    </div>
+         `;
+};
+
+
+
+
+
+
+
+
+function toggleDropdown() {
+  const dropdownOptions = document.querySelector('.dropdown-options');
+  dropdownOptions.style.display =
+    dropdownOptions.style.display === 'block' ? 'none' : 'block';
+}
+
+function selectOption(value) {
+  const selectedElement = document.querySelector('.dropdown-selected');
+  selectedElement.textContent = value;
+  const dropdownOptions = document.querySelector('.dropdown-options');
+  dropdownOptions.style.display = 'none';
+}
+ 
+function changeAudio(url) {
+            const audioPlayer = document.getElementById('audPlayer');
+            audioPlayer.src = url;
+            audioPlayer.load();
+            audioPlayer.play();
+        }
+
+  </script>
+
+  <script  type="module">
+
+//   ----------------------/Database Integration/-----------------------
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+import {
+  getDatabase,
+  ref,
+  get,
+} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyDy4aPsdivkRcXeMUJUhGi2nu4wSPXKrQw",
+    authDomain: "shlokas-d4be0.firebaseapp.com",
+    databaseURL: "https://shlokas-d4be0-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "shlokas-d4be0",
+    storageBucket: "shlokas-d4be0.firebasestorage.app",
+    messagingSenderId: "1091218824175",
+    appId: "1:1091218824175:web:0154136037557b52ae741a",
+    measurementId: "G-3HCXQ335KF"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+
+//-------------------------------/Fetching Data/-------------------------------
+
+function fetchTranslation(shlokaNum = window.currentShlokaNum || 1, languageKey) {
+  const tranRef = ref(
+    database,
+    `Shloka-${shlokaNum}/Translations/${languageKey}`
+  );
+  get(tranRef)
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        document.getElementById("navClick").innerHTML = snapshot.val();
+      } else {
+        console.log("No data found.");
+      }
+    })
+    .catch((error) => {
+      console.log("Error translating.", error);
+    });
+}
+
+function fetchContent(contentType, languageKey, targetId) {
+  const refPath = `Shloka-${window.currentShlokaNum || 1}/${contentType}/${languageKey}`;
+  const contentRef = ref(database, refPath);
+
+  get(contentRef)
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        document.getElementById(targetId).innerHTML = snapshot.val();
+      } else {
+        console.log("No data found for", refPath);
+      }
+    })
+    .catch((error) => {
+      console.log("Error fetching content:", error);
+    });
+}
+
+window.changeText = function (languageKey) {
+  fetchTranslation(window.currentShlokaNum, languageKey); 
+  fetchContent("WordToWord", languageKey, "word-to-word-meaning"); 
+  fetchContent("Commentary", languageKey, "commentary1"); 
+  fetchContent("Summary", languageKey, "summary1");
+  fetchContent("WordToWord2", languageKey, "word-to-word-meaning2"); 
+  fetchContent("Commentary2", languageKey, "commentary21"); 
+  fetchContent("Summary2", languageKey, "summary21");
+}
+
+//-----------------------------------------//
+  </script>
+
+</body>
+</html>
